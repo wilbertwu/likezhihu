@@ -48,12 +48,37 @@
         android:layout_marginTop="43dp"
         android:text="Button" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignRight="@+id/buttontest"
+        android:text="CheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/buttontest"
+        android:text="CheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_toLeftOf="@+id/checkBox2"
+        android:text="CheckBox" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@+id/section_label"
+        android:layout_alignBottom="@+id/section_label"
+        android:layout_toRightOf="@+id/section_label"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -61,8 +86,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/textView1"
+        android:layout_above="@+id/button1"
+        android:layout_toLeftOf="@+id/buttontest"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -70,9 +95,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button2"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
 </RelativeLayout>
